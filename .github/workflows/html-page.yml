@@ -10,6 +10,8 @@ jobs:
     steps:
     - name: Prepare
       run: sudo apt install emacs
+    - name: Installing packages
+      run: emacs --batch --exec "(progn (package-initialize) (package-install 'htmlize))"
     - name: Clone
       run: git clone https://github.com/konstantin-morenko/web-page-template.git
     - name: Htmlize

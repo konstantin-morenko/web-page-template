@@ -4,7 +4,7 @@ SOURCE_FILE = $(SOURCE_NAME).org
 
 HTML_FILE = index.html
 
-EMACS_EXPORT = emacs --batch --exec "(progn (package-initialize) (package-install 'htmlize) (find-file \"$(1)\") ($(2)))"
+EMACS_EXPORT = emacs --batch --exec "(progn (find-file \"$(1)\") ($(2)))"
 
 
 all: $(HTML_FILE)
