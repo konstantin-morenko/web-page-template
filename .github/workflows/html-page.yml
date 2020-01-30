@@ -10,9 +10,7 @@ jobs:
     steps:
     - name: Clone
       run: git clone https://github.com/konstantin-morenko/web-page-template.git
-    - name: Cd
-      run: cd web-page-template
     - name: Htmlize
-      run: make
+      run: cd web-page-template; make
     - name: Commit
       run: bash push.sh
