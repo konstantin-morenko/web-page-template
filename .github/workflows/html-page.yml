@@ -11,7 +11,7 @@ jobs:
     - name: Prepare
       run: sudo apt install emacs
     - name: Installing packages
-      run: emacs --batch --exec "(progn (add-to-list 'package-archives '(\"melpa\" . \"https://melpa.org/packages/\")) (package-initialize) (setq package-check-signature nil) (package-refresh-contents) (package-install 'htmlize))"
+      run: emacs --batch --exec "(progn (package-initialize) (add-to-list 'package-archives '(\"melpa\" . \"https://melpa.org/packages/\")) (setq package-check-signature nil) (package-refresh-contents) (package-install 'htmlize))"
     - name: Clone
       run: git clone https://github.com/konstantin-morenko/web-page-template.git
     - name: Htmlize
