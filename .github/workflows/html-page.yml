@@ -8,6 +8,9 @@ jobs:
     name: Create index.html and commit
     runs-on: ubuntu-latest
     steps:
+    - name: Clone
+      github clone https://github.com/konstantin-morenko/web-page-template.git
+      cd web-page-template
     - name: Htmlize
       run: make
     - name: Commit
