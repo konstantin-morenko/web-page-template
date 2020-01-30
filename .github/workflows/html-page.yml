@@ -8,6 +8,8 @@ jobs:
     name: Create index.html and commit
     runs-on: ubuntu-latest
     steps:
+    - name: Prepare
+      run: sudo apt install emacs
     - name: Clone
       run: git clone https://github.com/konstantin-morenko/web-page-template.git
     - name: Htmlize
