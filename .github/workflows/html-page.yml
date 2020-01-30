@@ -1,0 +1,14 @@
+name: Create html page after push
+on:
+  push:
+    branches:
+      - master
+jobs:
+  htmlize:
+    name: Create index.html and commit
+    runs-on: ubuntu-latest
+    steps:
+    - name: Htmlize
+      run: make
+    - name: Commit
+      run: bash push.sh

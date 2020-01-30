@@ -1,0 +1,31 @@
+
+#+SETUPFILE: org-html-styles/readtheorg/theme-readtheorg-local.setup
+
+#+TITLE: Автоматическая сборка страниц
+#+AUTHOR: Константин Моренко
+#+EMAIL: vim@konstantin-morenko.ru
+#+LANGUAGE: ru
+#+OPTIONS: email:t
+
+* Введение
+  :PROPERTIES:
+  :UNNUMBERED: t
+  :CUSTOM_ID: intro
+  :END:
+
+Тестовый файл для автоматической сборки
+
+* Подготовка
+  :PROPERTIES:
+  :CUSTOM_ID: preparation
+  :END:
+
+Подготовка:
+- клонировать репозиратий
+  https://github.com/konstantin-morenko/web-page-template.git
+- подключить субмодуль
+  #+begin_src sh
+  git submodule add https://github.com/konstantin-morenko/org-html-styles.git
+  #+end_src
+- настроить ключ доступа
+  https://gist.github.com/willprice/e07efd73fb7f13f917ea
