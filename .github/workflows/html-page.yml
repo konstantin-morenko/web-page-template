@@ -17,4 +17,4 @@ jobs:
     - name: Htmlize
       run: cd web-page-template; make
     - name: Commit
-      run: bash push.sh
+      run: cd web-page-template; bash push.sh
