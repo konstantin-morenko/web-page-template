@@ -23,6 +23,6 @@ jobs:
         git config --local user.name "GitHub Action"
         git commit -m "Add changes" -a
     - name: Push changes
-      uses: konstantin-morenko/web-page-template
+      uses: konstantin-morenko/web-page-template@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
