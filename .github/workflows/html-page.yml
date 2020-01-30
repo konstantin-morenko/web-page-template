@@ -26,4 +26,3 @@ jobs:
       uses: konstantin-morenko/web-page-template
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-      run: git push
