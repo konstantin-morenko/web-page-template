@@ -9,8 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone
-      git clone https://github.com/konstantin-morenko/web-page-template.git
-      cd web-page-template
+      run: git clone https://github.com/konstantin-morenko/web-page-template.git
+    - name: Cd
+      run: cd web-page-template
     - name: Htmlize
       run: make
     - name: Commit
