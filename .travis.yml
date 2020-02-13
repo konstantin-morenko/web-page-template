@@ -2,14 +2,13 @@ sudo: require
 dist: xenial
 language: bash
 before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y emacs
+- sudo apt-get -qq update
+- sudo apt-get install -y emacs
 script:
-  - make
-  - bash push.sh
+- make
+- bash push.sh
 branches:
   only:
   - master
-env:
-  global:
-  - secure: BydR8ss0F0Z2nwVE2wfq6zmvFYcJa8nJ3QYfP1pZbVMdxJLYgOGhCvJN9lFPzXbqPN1hH+t4sBTAjCYXHKwYGqJ59sCDImaTxrOE+vWWHH18rg6zBAWSzcu/ttH6khijylrsIZctc12tUKjX/jNBvRkkL1B9Fdbn6gK/m1+GQu68Z4h98j9M0V5r9sqjsgw2J7dr9tjd4MOTfrSYVXFlK//8Ar4z+jKIYqIo10H+hU2Kdfw1SY+JriZBEFDAA1muIWOkxUIA64VUc4IbYnqKHT5DK2XPXojfAP+ZmwZNvRfMhrWFt26ozGPt119ZWWFvCMPZY+/hGI3k+cyICWFbEtmkq6O0+e3+VpqtopqkLWZ/kzVIhuZqG7Msfq/aPb4EFsrnoyICZSqgfA1jHxr6X4Z3FXz0Ks45dw/0Vc6lobgkBRvcTii8MtxDt+l7GUpxQuXbiRKeol3+g121y5+ZT27dd9K34XjeRapEl/q0e2ERoLQRxtk+e9U+LSl+FrujfNr+GN+0PLBcXZVPribu19tPCmrPXKBDuVcmqcxXRFUHrI5pmWPWQrrBmWEXISBbHyxfjI4PKfWoXrMNL8lsXegtgYQXhRsIdfS3rdk1wpo6nikB9RPebotzlJ0t8nuBkSnsDSdr/LrEbhbkudgK0E8vAkneCrBAz8FYv87ko5o=
+dd:
+  secure: K/tWrIf3XuyFUAZ4FWVBMYcX9gcHw3/BITfyrqm06K4xurXaMRmN+Zym/vh6QbQluQK8h3lztFhRMnn7uieiczRqmi8gsVC5ylrsyxJC0luYeYk3R/vhv/SUK1uf/jBMLY3GxGGkJpmZRHZ2ObfgI+oRXjQuG42UmsdNOMcrAKO04qx0woVIs6yAR4pfDR6dIVSYxN1QzX3mfUGFFuCiqHYWV2bPmMu4sGxu7dKMDzgd7S6gAfvD7uQb3yyYyJXLVvaPzPkgpmphvcLHeGji8px4pNfBVcsNpETjXrrXRAI1yy1afuVvX26Zq+i0Lh/G9e8y8LxpFmmpEn4a13qctmTrPBU0Swiwl+Puczje36ciH869UJ3CqD71HtbOvqLJHZTMSt5zzC2DnF8CtcYrP+VMIxrbTdhfiZnOcIZwXzJi+2IYdc4Pkkeu+JS4fV3cpL/P2rqW6V/ofnome94b0eidF1ZCos/Ed3EJWFqygSgl1bIeaoFzPdDyNSdfHPHriKwSNAQvdOKey2PZlxH0sHp3oYy/v3buhKNBSI7qE/zYz9uQPIwX9g+nvlCkkO5xgeDb+xkuRaHPMYXexUjCKjM7AB5bGtE6wYVeZRVuS2B7GhqTBmkEIjGllXX+qKktlgOb62aE7OLidG4+ilIsnlYpruCP4vc3HQI82DPItIQ=
