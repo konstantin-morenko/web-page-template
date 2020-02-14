@@ -17,9 +17,8 @@ commit_pdfs() {
 }
 
 upload_files() {
-  git remote add origin-login https://github.com/konstantin-morenko/web-page-template.git
-  git push --set-upstream -f origin-login "travis"
-  # git push --set-upstream origin travisbranch
+  git remote add origin https://${GH_TOKEN}@github.com/konstantin-morenko/web-page-template.git
+  git push --quiet --set-upstream origin
 }
 
 setup_git
